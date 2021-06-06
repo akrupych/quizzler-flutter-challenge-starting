@@ -47,6 +47,8 @@ class _QuizPageState extends State<QuizPage> {
             .show();
         quizBrain.reset();
         scoreKeeper.clear();
+        correctAnswers = 0;
+        incorrectAnswers = 0;
       } else {
         if (userPickedAnswer == correctAnswer) {
           correctAnswers++;
